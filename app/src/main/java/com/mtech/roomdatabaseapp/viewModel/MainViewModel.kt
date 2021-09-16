@@ -9,11 +9,6 @@ import com.mtech.roomdatabaseapp.roomDB.entity.UserEntity
 class MainViewModel(app: Application): AndroidViewModel(app) {
 
     private val userLiveData = MutableLiveData<List<UserEntity>>()
-    val userObserver get() = userLiveData
-
-    init {
-
-    }
 
     fun getAllUsersObservers(): MutableLiveData<List<UserEntity>>{
         return userLiveData
